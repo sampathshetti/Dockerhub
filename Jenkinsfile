@@ -9,7 +9,7 @@
   
    environment {
 
-     DOCKERHUB_CREDENTIALS = credentials('sampathshetti-dockerhub')
+     DOCKERHUB_CREDENTIALS = credentials('dockerhub')
    }
 
    stages {
