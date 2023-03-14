@@ -9,7 +9,7 @@
   
    environment {
 
-     DOCKERHUB_CREDENTIALS = credentials('darinpope-dockerhub')
+     DOCKERHUB_CREDENTIALS = credentials('sampath-dockerhub')
    }
 
    stages {
@@ -18,21 +18,21 @@
 
         steps {
 
-          sh 'docker build -t darinpope/dp-alpine:latest .'
+          sh 'docker build -t sampath/dp-alpine:latest .'
         }
       }
       stage('login') {
 
         steps {
      
-          sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+          sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-sampath@1914'
          }
        }
        stage('push') {
          
          steps {
 
-            sh 'docker push darinpope/dp-alpine:latest'
+            sh 'docker push sampath/dp-alpine:latest'
          }
        }
      }
