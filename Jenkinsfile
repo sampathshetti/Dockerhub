@@ -9,7 +9,7 @@
   
    environment {
 
-     DOCKERHUB_CREDENTIALS = credentials('sampathkumar-dockerhub)
+     DOCKERHUB_CREDENTIALS = credentials('sampathkumar-dockerhub')
    }
 
    stages {
