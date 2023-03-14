@@ -9,7 +9,7 @@
   
    environment {
 
-     DOCKERHUB_CREDENTIALS = credentials('sampathkumar-dockerhub')
+     DOCKERHUB_CREDENTIALS = credentials('darinpope-dockerhub')
    }
 
    stages {
@@ -18,7 +18,7 @@
 
         steps {
 
-          sh 'docker build -t sampathkumar/dp-alpine:latest .'
+          sh 'docker build -t darinpope/dp-alpine:latest .'
         }
       }
       stage('login') {
@@ -32,7 +32,7 @@
          
          steps {
 
-            sh 'docker push sampathkumar/dp-alpine:latest'
+            sh 'docker push darinpope/dp-alpine:latest'
          }
        }
      }
