@@ -18,7 +18,7 @@
 
         steps {
 
-          sh 'docker build -t mangisettisampath66@gmail.com/dp-alpine:latest .'
+          sh 'docker build -t sampathshetti/dp-alpine:latest .'
         }
       }
       stage('login') {
@@ -32,7 +32,7 @@
          
          steps {
 
-            sh 'docker push mangisettisampath66@gmail.com/dp-alpine:latest'
+            sh 'docker push sampathshetti/dp-alpine:latest'
          }
        }
      }
